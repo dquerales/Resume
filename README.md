@@ -1,2 +1,7 @@
 # curriculum_vitae
-collections of cv
+
+This a repository of collections of cv
+
+## This includes:
+* FPGA
+* Microcontrollers
