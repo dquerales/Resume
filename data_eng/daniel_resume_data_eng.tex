@@ -1,7 +1,6 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
+%==============================================
+% Packages and other document configurations
+%==============================================
 \documentclass[11pt]{article} % Default document font size
 
 \input{structure.tex} % Include the file specifying the document structure and styling
@@ -13,7 +12,7 @@
 }
 
 %==============================================
-% Definiciones
+% Definitions
 %==============================================
 \def\ucv{Universidad Central de Venezuela}
 \def\faci{Facultad de Ingenier\'ia}
@@ -21,36 +20,74 @@
 \def\dpt{Departamento de Electr\'onica, Computaci\'on y Control}
 \def\asig{Controladores Programables Industriales}
 \def\autor{Querales V. Daniel S}
-\def\ee{Electrical Engineer}
-\def\titulo{{\bf Pr\'actica \# 1 - Controladores Programables Industriales}}
+\def\ee{RecentGraduate and Entry-Level Data Analyst}
+
+% dont post photos of yourself
+% https://enhancv.com/resume-examples/data-analyst/
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	CONTACT AND GENERAL INFORMATION
-%----------------------------------------------------------------------------------------
-{\LARGE\bfseries \autor} \\ % Name
+\thispagestyle{empty}
+
+%==============================================
+% Contact and general information
+%==============================================
+\begin{center}
+{\LARGE \autor} \\ % Name
 {\bfseries \ee}
-\bigskip\bigskip\medskip % Whitespace
+\bigskip % Whitespace
 
-\faLocationArrow  \quad Carrizal, Miranda, Venezuela % Address
-%\medskip % Whitespace
+{\footnotesize{
+\faLocationArrow  \quad Carrizal, Miranda, Venezuela % Address %\medskip % Whitespace 
+\quad \faPhone \quad +58 416-041-0342 % Mobile number %\medskip % Whitespace
+\quad \faEnvelopeO \quad \href{mailto:d.querales@gmail.com}{d.querales@gmail.com} % Email address 
 
-\faPhone \quad +58 416-041-0342 % Mobile number
-%\medskip % Whitespace
+\faLinkedinSquare  \quad {\footnotesize{\url{https://www.linkedin.com/in/daniel-querales-865335222/}}} %Linkedin
 
-\faEnvelopeO \quad \href{mailto:d.querales@gmail.com}{d.querales@gmail.com} % Email address 
+\faGithub  \quad {\footnotesize{\url{https://github.com/dquerales/}}} %Github
+}}
+\end{center}
 
-\faLinkedinSquare  \quad {\url{https://www.linkedin.com/in/daniel-querales-865335222/}}
+%============================================
+% Summary
+%============================================
+%What you should include in your data analyst resume summary:
+% An elevator pitch that presents what your value to the company will be.
+% Hard data on what your impact has been.
+% A hint about your motivation and interests.
+% Who you are and what your personal qualities are.
+% Why you’re a valuable hire.
+% What is your motivation and career trajectory.
+% This information will help recruiters decide if you’re a good culture fit for the company and whether or not the company can accommodate your career development dreams.
+% If you will be adding a cover letter to your application, you might want to expand on this information there and skip the resume objective or summary altogether. This is not a required section in your resume but it may play a role to distinguish you from the competition.
 
 \renewcommand{\abstractname}{}    % clear the title
 \begin{abstract}
-I am a Electrical Engineer (especializated in electronics) with two years of experience in FPGA design, synthesis and verification.
+A recent graduate Electrical Engineer (specialized in electronics) looking for an entry level data science position to fulfill my curiosity (and also play) in the big world of data
 \end{abstract}
 \bigskip
 
+
 %============================================
-%	EDUCATION
+% Skills
+%============================================
+% show first your skills 
+% don't write soft skills
+
+\section*{Skills}
+
+\begin{itemize}
+\itemsep0em
+\item Experience with SQL, MySQL
+\item Tableu or Power BI
+\item Excel
+\item Working experience with Python
+\item Familiarity with the basic principles of data modeling
+\item Familiarity with revision control (git)
+\end{itemize}
+
+%============================================
+% Education
 %============================================
 \section*{Education}
 
@@ -59,32 +96,17 @@ I am a Electrical Engineer (especializated in electronics) with two years of exp
 Mention in Electronics, Computer Science and Control Systems
 
 %============================================
-%	WORK EXPERIENCE
+% Work experience
 %============================================
-\section*{Experience}
+\section*{Work Experience}
 
 \years{2019-2021}\textbf{Freelancer} \\ 
 Hardware description, Numerical Methods and Control Systems 
 
 %============================================
-%	Skills
+% Related projects
 %============================================
-\section*{Skills}
-
-\begin{itemize}
-\itemsep0em
-\item Understanding of Altera devices and tools
-\item Experience and knowledge in C and Python
-\item Proficient with Verilog HDL and System Verilog
-\item Design and implementation using Altera Quartus
-\item Experience in verification testbenches using Modelsim
-\item Familiarity with revision control (git)
-\end{itemize}
-
-%============================================
-%	LGUG
-%============================================
-\section*{Related projects}
+\section*{Related Projects}
 
 \textbf{Project Name 1} | Developer, Feb 2019 \\ 
 \faGithub  \quad {\footnotesize{\url{https://www.linkedin.com/in/daniel-querales-865335222/}}}\\
