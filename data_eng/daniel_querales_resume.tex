@@ -7,12 +7,15 @@
 % Packages
 %==============================================
 \usepackage[T1]{fontenc}
-\usepackage[scaled]{helvet}
-\renewcommand*{\familydefault}{\sfdefault}
+%\usepackage[scaled]{helvet}
+%\renewcommand*{\familydefault}{\sfdefault}
+%\usepackage[default]{cantarell} %% Use option "defaultsans" to use cantarell as sans serif only
+%\usepackage[familydefault,light]{Chivo}
+\usepackage[default]{raleway}
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 \usepackage[usenames, dvipsnames]{xcolor} % Required for specifying colours by name
 \usepackage[bookmarks, colorlinks, breaklinks]{hyperref} % Required for links
-\hypersetup{linkcolor=blue, citecolor=blue, filecolor=black, urlcolor=MidnightBlue}% Set link colours
+\hypersetup{linkcolor=black, citecolor=blue, filecolor=black, urlcolor=cyan}% Set link colours
 \hypersetup{pdftitle={Daniel Querales - Curriculum vitae}, pdfauthor={Daniel Querales}}% Set PDF meta-information
 
 %==============================================
@@ -20,8 +23,8 @@
 %==============================================
 \geometry{
 	paper=a4paper, % Paper size, change to letterpaper for US letter size
-	top=4cm, % Top margin
-	bottom=4cm, % Bottom margin
+	top=2cm, % Top margin
+	bottom=2cm, % Bottom margin
 	left=2cm, % Left margin
 	right=2cm, % Right margin
 	headheight=0.75cm, % Header height
@@ -34,7 +37,7 @@
 % Definitions
 %==============================================
 \def\myname{DANIEL QUERALES}
-\def\position{Entry-Level Data Analyst}
+\def\position{$\cdot$ Entry-Level Data Analyst $\cdot$}
 \def\ucv{Universidad Central de Venezuela}
 
 % dont post photos of yourself
@@ -48,7 +51,7 @@
 %==============================================
 \begin{center}
 {\Huge \myname} \\ % Name
-{\large \bfseries \position}
+{\large \position}
 \end{center}
 
 %============================================
@@ -72,7 +75,7 @@
 
 \section*{SUMMARY}
 
-An Electrical Engineer (mention in electronics) with a strong background in maths, probability and statistics looking for an entry level data science position to get involve into the world of data. Familiarized with tools like SQL, Git, Tableau and Python for data transformation, cleaning, analysis and visualization.
+An Electrical Engineer (mention in electronics and computer science) with a strong background in maths, probability and statistics looking for an entry level data science position to get involve into the world of data. Familiarized with tools like SQL, Tableau and Python for data transformation, cleaning, analysis, prediction and visualization.
 
 
 %%============================================
@@ -98,28 +101,28 @@ An Electrical Engineer (mention in electronics) with a strong background in math
 %============================================
 \section*{MY PORTFOLIO}
 
-\subsection*{Data Exploration: Two years of COVID-19}
+\subsection*{\href{https://dquerales.github.io/DanielPortfolio/two_years_of_covid.html}{Data Exploration: Two years of COVID-19}}
  
-\emph{A data exploration project of the COVID-19 dataset using tools like SQL and Tableau}.
+\emph{A data exploration project of the COVID-19 dataset. Used SQL to explore the values of total cases, total deaths \& people fully vaccinated. The data was visualized with Tableau Public tools}.
 
-\subsection*{Data Cleaning and Analysis using SQL: Real Estate Datasets}
+\subsection*{\href{https://github.com/dquerales/DataScience/tree/main/Real\%20Estate\%20Data\%20Cleaning}{Data Cleaning using SQL: Real Estate Datasets}}
  
-\emph{A data cleaning and transformation project of a real estate dataset using MySQL}.
+\emph{A data cleaning and transformation project of a real estate dataset using MySQL Workbench. Applied date format manipulation, nulls values replacement, reorganization and extraction of zip-code, states and streets, etc.}
 
-\subsection*{Machine Learning: Predicting Tesla Stock Prices}
+\subsection*{\href{https://dquerales.github.io/DanielPortfolio/linear_regression.html}{Machine Learning: Predicting Tesla Stock Prices}}
 
-\emph{A machine learning project of the Tesla (TSLA) stock historic prices dataset to predict values using linear regression with tools like Pandas, Numpy, Plotly and SK-Learn}.
+\emph{A machine learning project of the Tesla (TSLA) stock historic prices dataset to predict values using linear regression with tools like Pandas, Numpy, Plotly and SK-Learn. Data exploration of the behaviour of the prices. Split data into the training and test partitions to remodel and score the results}.
 
-\subsection*{Sales Analysis: Electronics Store}
+\subsection*{\href{https://github.com/dquerales/DataScience/tree/main/Sales\%20Analysis}{Sales Analysis: Electronics Store}}
 
-\emph{A data cleaning and transformation project of the sales from a electronics stores using Python}.
+\emph{A data cleaning and transformation project of the sales from electronics stores using Python. Merged multiple files into a single CSV format. Transformation of multiples dates formats. Data cleaning operations. Extract insights about the best products sales, the best months for sales, products often sell together and most frequent hour for sales }.
 
 %============================================
 % Education
 %============================================
 \section*{EDUCATION}
 
-\textbf{Engineer's Degree in Electrical Engineering} | 2008-2019 \\ 
+\textbf{Engineer's Degree in Electrical Engineering} $\cdot$ 2008-2019 \\ 
 \emph{\ucv}\\
 Mention in Electronics, Computer Science and Control Systems
 
@@ -128,7 +131,7 @@ Mention in Electronics, Computer Science and Control Systems
 %============================================
 \section*{WORK EXPERIENCE}
 
-\textbf{Freelancer} | 2019-2022 \\ 
+\textbf{Freelancer} $\cdot$ 2019-2022 \\ 
 Hardware Description, Numerical Methods and Control Systems
 
 \vfill
