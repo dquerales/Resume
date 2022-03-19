@@ -1,7 +1,7 @@
 %==============================================
 % Document Class
 %==============================================
-\documentclass[10pt]{article} % Default document font size
+\documentclass[5pt]{article} % Default document font size
 
 %==============================================
 % Packages
@@ -13,6 +13,10 @@
 \usepackage[bookmarks, colorlinks, breaklinks]{hyperref} % Required for links
 \hypersetup{linkcolor=black, citecolor=blue, filecolor=black, urlcolor=cyan}% Set link colours
 \hypersetup{pdftitle={Daniel Querales - Resume}, pdfauthor={Daniel Querales}, pdfkeywords={Data Analyst, Machine Learning, Data Science, SQL, Python, Excel, Power Bi, Tableau, MySQL, R}}% Set PDF meta-information
+
+%Ensure that the PDF output will be all unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 %==============================================
 % Page Layout
@@ -33,9 +37,9 @@
 % Definitions
 %==============================================
 \def\myname{DANIEL QUERALES}
-%\def\position{Entry-Level Data Analyst}
+\def\position{Entry-Level Data Analyst}
 %\def\position{Entry-Level Business Intelligence Analyst}
-\def\position{Entry-Level Data Scientist}
+%\def\position{Entry-Level Data Scientist}
 \def\ucv{Universidad Central de Venezuela}
 
 % dont post photos of yourself
@@ -55,82 +59,82 @@
 %============================================
 % SUMMARY
 %============================================
-\section*{SUMMARY}
+%\section*{SUMMARY} %dont use section for summary for ATS read
 
-\emph{Electrical Engineer (with a major in electronics and computer science) with a background in maths, probability and statistics looking for an entry level data science position. Familiarized with languages like Python and SQL; tools like Git, Tableau, Excel and Power BI; also some knowledge with cloud platforms like Microsoft Azure (data warehouses). Experienced with data activities like cleaning, transformation,  analysis, modelling, prediction and visualization.}
-
+%\emph{Electrical Engineer (with a major in electronics and computer science) with a background in maths, probability and statistics looking for an entry level data science position. Familiarized with languages like Python and SQL; tools like Git, Tableau, Google Data Studio, Excel and Power BI; also some knowledge with cloud platforms like Microsoft Azure (data warehouses). Experienced with data activities like cleaning, transformation,  analysis, modelling, prediction and visualization.}
 
 %============================================
 % SKILLS
 %============================================
-%\section*{SKILLS}
-%
-%\begin{itemize}
-%\itemsep0em
-%\item {\bf Programming}: SQL \& Python.
-%\item {\bf Data Visualization}: Tableau, Power BI \& Excel.
-%\item {\bf Modeling}: Logistic and Linear Regressions. Decision trees.
-%\end{itemize}
+\section*{SKILLS}
+
+\begin{itemize}
+\itemsep0em
+\item {\bf Programming}: SQL \& Python.
+\item {\bf Data Visualization}: Google Data Studio, Tableau \& Power BI.
+\item {\bf Tools}: Excel, Git, Microsoft Azure \& PySpark.
+\end{itemize}
 
 %============================================
 % PROJECTS
 %============================================
-\section*{RELATED PROJECTS - \href{https://github.com/dquerales/DataScience}{MY REPOSITORY} - \href{https://dquerales.github.io/DanielPortfolio/}{MY PORTFOLIO}}
+\section*{PROJECTS}
 
 \subsection*{Data Exploration: Two years of COVID-19 - \href{https://dquerales.github.io/DanielPortfolio/two_years_of_covid.html}{View on Github}}
  
 \begin{itemize}
 \itemsep0em
-\item A data exploration project of the COVID-19 dataset.
-\item Used MySQL to explore the values of total cases, total deaths \& people fully vaccinated. 
-\item The data was visualized with Tableau Public tools.
+\item Interpreted successfully the data from the COVID-19 dataset to explore the development of the pandemic.
+\item Utilized MySQL to identify the values of total cases, total deaths \& people fully vaccinated. 
+\item Built a dashboard in Tableau Public to report findings including key metrics.
 \end{itemize}
 
 \subsection*{Predicting Stock Prices with Linear Regression - \href{https://dquerales.github.io/DanielPortfolio/linear_regression.html}{View on Github}}
 
 \begin{itemize}
 \itemsep0em
-\item A machine learning project of the Tesla (TSLA) stock historic prices dataset to predict stock prices using a linear regression model.
-\item Some finance data exploration of the prices (adjusted close, volume, market cap, volatility) with Python tools like Pandas, Numpy and Plotly. 
+\item Predicted Tesla (TSLA) stock historic prices using a linear regression model to identify trends.
+\item Explored prices (adjusted close, volume, market cap, volatility) with Python tools like Pandas, Numpy and Plotly.
+\item Achieved 98\% of accuracy using the model with test values. 
 \end{itemize}
 
-\subsection*{Data Cleaning using MySQL: Real Estate Datasets - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
- 
-\begin{itemize}
-\itemsep0em
-\item A data cleaning and transformation project of a real estate dataset.
-\item Applied date format manipulation, nulls values replacement, column reorganization and extraction of zip-codes, states and streets, etc.
-\end{itemize}
+%\subsection*{Data Cleaning using MySQL: Real Estate Datasets - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
+% 
+%\begin{itemize}
+%\itemsep0em
+%\item A data cleaning and transformation project of a real estate dataset.
+%\item Applied date format manipulation, nulls values replacement, column reorganization and extraction of zip-codes, states and streets, etc.
+%\end{itemize}
 
 
 \subsection*{Sales Analysis: Electronics Store - \href{https://dquerales.github.io/DanielPortfolio/sales_analysis.html}{View on Github}}
 
 \begin{itemize}
 \itemsep0em
-\item A data cleaning and transformation project of the sales from an electronic store using Python.
+\item Performed an analysis of the sales records from an retail to identify opportunities to increase revenues.
 \item Merged multiple files into a single CSV, transformation from multiples dates formats and data cleaning operations.
 \item Extracted insights about the best products sales, the best months for sales, products often sell together and most frequent hour for sales.
 \end{itemize}
 
 
-%\subsection*{Clustering for Customer Segmentation - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
+%\subsection*{Customer Segmentation - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
 % 
 %\begin{itemize}
 %\itemsep0em
-%\item A unsupervised machine learning project for clustering customers for a marketing campaign.
-%\item Data cleaning (like outliers, nulls), preparation and transformation of a customer dataset. Also exploration and visualization of features.
-%\item Used K-means clustering with WCSS and Silhouette averages for scoring.
+%\item A unsupervised model project for clustering customers for a marketing campaign.
+%\item Conducted data cleaning (like outliers, nulls), preparation and transformation of the customer dataset. Also made some exploration and visualization of features.
+%\item Used K-means model with WCSS and Silhouette averages for scoring performance.
 %\end{itemize}
-%
-%\subsection*{Fraud Detection for Bank Transactions - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
-% 
-%\begin{itemize}
-%\itemsep0em
-%\item A logistic regression project for fraud detection in finance environments.
-%\item Used classic, gaussianNB, svc and random forest models for detection.
-%\item Assessed performance with accuracy, precision and recall scores. Plot ROC curves to visualize AUC (area under curve).
-%\end{itemize}
-%
+
+\subsection*{Fraud Detection for Bank Transactions - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
+ 
+\begin{itemize}
+\itemsep0em
+\item Trained a logistic regression model for fraud detection in financial transactions.
+\item Compared Classic, GaussianNB, SVC and Random Forest models to improve efficiencies in detection results.
+\item Assessed performance with accuracy, precision and recall scores. Plot ROC curves to visualize AUC (area under curve).
+\end{itemize}
+
 %\subsection*{Product Recommendations for Retails - \href{https://github.com/dquerales/DataScience/tree/main/Projects/Product\%20Recommendations}{View on Github}}
 % 
 %\begin{itemize}
@@ -147,7 +151,7 @@
 
 \textbf{Engineer's Degree in Electrical Engineering} | 2008-2019 \\ 
 \emph{\ucv}\\
-Mention in Electronics, Computer Science and Control Systems
+Mention in Electronics, Computer Science and Control Systems.
 
 %============================================
 % WORK EXPERIENCE
@@ -155,7 +159,7 @@ Mention in Electronics, Computer Science and Control Systems
 \section*{WORK EXPERIENCE}
 
 \textbf{Freelancer} | 2019-2022 \\ 
-Hardware Description, Numerical Methods and Control Systems
+Hardware Description, Numerical Methods and Control Systems.
 
 %============================================
 % CONTACT
@@ -167,8 +171,8 @@ Hardware Description, Numerical Methods and Control Systems
 $\cdot$
 \href{mailto:d.querales@gmail.com}{d.querales@gmail.com} $\cdot$ % Email 
 \url{https://www.linkedin.com/in/daniel-querales/} $\cdot$ %Linkedin
-\url{https://github.com/dquerales/} $\cdot$ %Github
-\url{https://dquerales.github.io/DanielPortfolio/} $\cdot$ %Portfolio
+%\url{https://github.com/dquerales/} $\cdot$ %Github
+%\url{https://dquerales.github.io/DanielPortfolio/} $\cdot$ %Portfolio
 %}
 
 \end{document}
