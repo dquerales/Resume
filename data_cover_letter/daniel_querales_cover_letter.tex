@@ -1,7 +1,7 @@
 %==============================================
 % DOCUMENT CLASS
 %==============================================
-\documentclass[10pt]{article} % Default document font size
+\documentclass[5pt]{article} % Default document font size
 
 %==============================================
 % PACKAGES
@@ -14,6 +14,10 @@
 
 \hypersetup{linkcolor=black, citecolor=blue, filecolor=black, urlcolor=cyan}% Set link colours
 \hypersetup{pdftitle={Daniel Querales - Cover Letter}, pdfauthor={Daniel Querales}, pdfkeywords={Data Analyst, Machine Learning, Data Science, SQL, Python, Excel, Power Bi, Tableau}}% Set PDF meta-information
+
+%Ensure that the PDF output will be all unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 %==============================================
 % PAGE LAYOUT
@@ -37,14 +41,16 @@
 %==============================================
 \def\myname{Daniel Querales}
 %\def\position{Data Analyst}
-\def\position{Business Analyst}
+%\def\position{Business Analyst}
 %\def\position{Data Scientist}
+\def\position{Machine Learning Engineer}
 \def\company{Treinta}
 \def\managername{Hiring manager}
 \def\managertitle{Hiring manager’s title}
 \def\companyaddress{Company address}
 
-\title{\myname}
+\title{{\Huge \myname} \\ % Name
+{\large \position}} %Position
 \date{\today}
 
 %============================================
@@ -80,7 +86,7 @@
 
 Dear Ms./Mr. \managername, \\
 
-Hi, my name is \myname, and I’m an Electrical Engineer looking to flex my talents to identify new growth strategies for \company~as a \position. I’ve always been fascinated by numbers, and working in data analytics has been a long-term goal of mine. My background in statistics, electronics and control systems has taught me to think strategically about problems and identify solutions. I believe this experience would make me a great addition to the team.  
+Hi, my name is \myname~and I’m an Electrical Engineer looking to flex my talents to identify new growth strategies for \company~as a \position. I’ve always been fascinated by numbers, and working in data analytics has been a long-term goal of mine. My background in statistics, electronics and control systems has taught me to think strategically about problems and identify solutions. I believe this experience would make me a great addition to the team.  
 \bigskip
 
 %============================================
@@ -125,9 +131,9 @@ Thank you for your consideration,
 \vfill
 \centering
 $\cdot$
-%+58 416-041-0342 $\cdot$ %phone
++58 424 135 4501 $\cdot$ %phone
 \href{mailto:d.querales@gmail.com}{d.querales@gmail.com} $\cdot$ % Email 
-\url{https://www.linkedin.com/in/daniel-querales/} $\cdot$ %Linkedin
+\url{https://www.linkedin.com/in/danielquerales/} $\cdot$ %Linkedin
 %\url{https://github.com/dquerales/} $\cdot$ %Github
 %\url{https://dquerales.github.io/DanielPortfolio/} $\cdot$ %Portfolio
 
