@@ -1,8 +1,10 @@
-# curriculum_vitae
-
+# Resume
 This a repository of collections of cv
 
-## This includes:
-* FPGA
-* Microcontrollers
-* Data Science
+## Installation
+
+1. Install requirements
+
+# Contact
+
+Daniel Querales - d.querales@gmail.com
