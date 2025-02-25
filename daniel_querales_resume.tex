@@ -1,20 +1,20 @@
 %==============================================
 % Document Class
 %==============================================
-\documentclass[5pt]{article} % Default document font size
+\documentclass[9pt]{article} % Reduced document font size
 
 %==============================================
 % Packages
 %==============================================
 \usepackage[T1]{fontenc}
-\usepackage[default]{raleway} %font
+\usepackage[default]{raleway} % Font
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 \usepackage[usenames, dvipsnames]{xcolor} % Required for specifying colours by name
 \usepackage[bookmarks, colorlinks, breaklinks]{hyperref} % Required for links
 \hypersetup{linkcolor=black, citecolor=blue, filecolor=black, urlcolor=cyan}% Set link colours
-\hypersetup{pdftitle={Daniel Querales | Resume}, pdfauthor={Daniel Querales}, pdfkeywords={Data Analyst, Machine Learning, Data Science, SQL, Python, Excel, Power Bi, Tableau, MySQL, R}}% Set PDF meta[...]
+\hypersetup{pdftitle={Daniel Querales | Resume}, pdfauthor={Daniel Querales}, pdfkeywords={Data Analyst, Machine Learning, Data Science, SQL, Python, Excel, Power Bi, Tableau, MySQL, R}}% Set PDF metadata
 
-%Ensure that the PDF output will be all unicode and machine-readable
+% Ensure that the PDF output will be all unicode and machine-readable
 \input{glyphtounicode}
 \pdfgentounicode=1
 
@@ -22,33 +22,27 @@
 % Page Layout
 %==============================================
 \geometry{
-	paper=a4paper, % Paper size, change to letterpaper for US letter size
-	top=2cm, % Top margin
-	bottom=2cm, % Bottom margin
-	left=2cm, % Left margin
-	right=2cm, % Right margin
-	headheight=0.75cm, % Header height
-	footskip=1cm, % Space from the bottom margin to the baseline of the footer
-	headsep=0.75cm, % Space from the top margin to the baseline of the header
-	%showframe, % Uncomment to show how the type block is set on the page
+    paper=a4paper, % Paper size, change to letterpaper for US letter size
+    top=1.25cm, % Top margin
+    bottom=2cm, % Bottom margin
+    left=2cm, % Left margin
+    right=2cm, % Right margin
+    headheight=0.75cm, % Header height
+    footskip=1cm, % Space from the bottom margin to the baseline of the footer
+    headsep=0.75cm, % Space from the top margin to the baseline of the header
+    % showframe, % Uncomment to show how the type block is set on the page
 }
+
+% Reduce spacing between items in itemize
+\usepackage{enumitem}
+\setlist{nosep} % No extra space between items
 
 %==============================================
 % Definitions
 %==============================================
 \def\myname{DANIEL QUERALES}
-%\def\position{Junior Data Analyst}
-%\def\position{Data Engineer Jr.}
-%\def\position{Entry-Level Data Analyst}
-%\def\position{Entry-Level Business Intelligence Analyst}
-%\def\position{Entry-Level Data Scientist}
-%\def\position{Data Scientist}
-\def\position{Full Stack Data Scientist}
-%\def\position{Junior Machine Learning Engineer}
+\def\position{DATA SCIENTIST}
 \def\ucv{Universidad Central de Venezuela}
-
-% dont post photos of yourself
-% https://enhancv.com/resume-examples/data-analyst/
 
 \begin{document}
 \thispagestyle{empty}
@@ -56,30 +50,44 @@
 %==============================================
 % Name & Job Title
 %==============================================
-\begin{center}
+\begin{flushleft}
 {\Huge \myname} \\ % Name
-{\large \position}
-\end{center}
+\medskip
+{\LARGE  \position} \\ 
+\bigskip
+\href{mailto:d.querales@gmail.com}{d.querales@gmail.com} \\ 
+\url{https://www.linkedin.com/in/danielquerales/}
+\end{flushleft}
 
 %============================================
 % SUMMARY
 %============================================
-%\section*{SUMMARY} %dont use section for summary for ATS read
-
-\emph{Electrical Engineer with Data Science expertise. Proficient in R, Python, and SQL. Experienced in all stages of the machine learning lifecycle, including data cleaning and processing to model de[...]
+%\section*{Summary}
+\emph{Electrical Engineer with expertise in Data Science, proficient in R, Python, and SQL. Skilled in the complete machine learning lifecycle, from data cleaning and processing to model deployment and evaluation. Experienced in using tools like Tableau, Power BI, and Spark. Adept at collaborating to develop data-driven solutions, with strong capabilities in SQL, R, Python (Pandas, NumPy, Scikit-learn, Matplotlib), AWS Quicksight, Google Data Studio, and Microsoft Azure.}
 
 %============================================
-% SKILLS
+% WORK EXPERIENCE
 %============================================
-%\section*{SKILLS}
-%
-%\begin{itemize}
-%\itemsep0em
-%\item {\bf Programming}: SQL, R \& Python (ex: Pandas, NumPy, Scikit-learn \& Matplotlib).
-%\item {\bf Data Visualization}: AWS Quicksight, Google Data Studio, Tableau \& Power BI.
-%\item {\bf Modelling}: Regression, Classification \& Clustering.
-%\item {\bf Tools}: Excel, LaTex, Git, Spark, Flask, AWS \& Microsoft Azure.
-%\end{itemize}
+\section*{WORK EXPERIENCE}
+
+\subsection*{Data Scientist | 2022-Present}
+\emph{QUASH.ai}
+\begin{itemize}
+\item Performed extensive data cleaning and preprocessing to ensure data quality and readiness for analysis.
+\item Trained machine learning models for various applications, including predictive analytics and classification.
+\item Deployed machine learning models into production environments, ensuring seamless integration and operational efficiency.
+\item Utilized big data tools such as Apache Spark for large-scale data processing and analysis.
+\item Collaborated with cross-functional teams to develop data-driven solutions and insights.
+\end{itemize}
+
+\subsection*{Freelancer | 2019-2022}
+\emph{Freelance}
+\begin{itemize}
+\item Conducted projects involving hardware description, numerical methods, and control systems.
+\item Cleaned and transformed raw datasets, addressing issues such as missing values and outliers.
+\item Developed and trained models for tasks such as regression, classification, and clustering.
+\item Deployed models and data pipelines, automating workflows for clients.
+\end{itemize}
 
 %============================================
 % PROJECTS
@@ -87,132 +95,33 @@
 \section*{PROJECTS}
 
 \subsection*{Data Exploration: Two years of COVID-19 - \href{https://dquerales.github.io/DanielPortfolio/two_years_of_covid.html}{View on GitHub}}
- 
 \begin{itemize}
-\itemsep0em
-\item Interpreted successfully the data from the COVID-19 dataset to explore the development of the pandemic.
-\item Utilized MySQL to analyse the values of total cases, total deaths \& people fully vaccinated. 
-\item Built a dashboard in Tableau Public to report key metrics.
+\item Analyzed COVID-19 data to track the development of the pandemic.
+\item Used MySQL to compute values like total cases, total deaths, and fully vaccinated people.
+\item Created a Tableau dashboard to visualize key metrics.
 \end{itemize}
 
-%\subsection*{Predicting Stock Prices with Linear Regression - \href{https://dquerales.github.io/DanielPortfolio/linear_regression.html}{View on GitHub}}
-
-%\begin{itemize}
-%\itemsep0em
-%\item Predicted Tesla (TSLA) stock historic prices using a linear regression model to identify trends.
-%\item Explored prices (adjusted close, volume, market cap, volatility) with Python tools like Pandas, Numpy and Plotly.
-%\item Achieved 98\% of accuracy using with a test values data-set. 
-%\end{itemize}
-
-%%\subsection*{Data Cleaning using MySQL: Real Estate Datasets - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
-%% 
-%%\begin{itemize}
-%%\itemsep0em
-%%\item A data cleaning and transformation project of a real estate dataset.
-%%\item Applied date format manipulation, nulls values replacement, column reorganization and extraction of zip-codes, states and streets, etc.
-%%\end{itemize}
-%
-%
 \subsection*{Sales Analysis: Electronics Store - \href{https://dquerales.github.io/DanielPortfolio/sales_analysis.html}{View on GitHub}}
-
 \begin{itemize}
-\itemsep0em
-\item Performed an analysis of the sales records to discover opportunities to increase revenues.
-%\item Merged multiple files into a single CSV, transformation from multiples dates formats and data cleaning operations.
-\item Extracted insights about the best products sales, the best months for sales, products often sell together and most frequent hour for sales.
+\item Examined sales records to find opportunities for revenue growth.
+\item Identified best-selling products, peak sales months, frequently bought-together items, and peak sales hours.
 \end{itemize}
 
-\subsection*{Customer Segmentation - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on Github}}
- 
+\subsection*{Web APP Deployment: Sentiment Analysis - \href{https://dquerales-webapp-app-xmgqcu.streamlit.app/}{View WebApp}}
 \begin{itemize}
-\itemsep0em
-\item A unsupervised model project for clustering customers for a marketing campaign.
-\item Conducted data cleaning techniques (like outliers, nulls), preparation and transformation of the customer dataset. Performed exploration and visualization.
-\item Used K-means model with WCSS and Silhouette averages for scoring performance.
+\item Created a text classifier model to automate sentiment analysis.
+\item Vectorized reviews for SVC classifier and built a preprocessing pipeline for improved accuracy.
+\item Deployed the model as a Streamlit web application.
 \end{itemize}
-%
-%%\subsection*{Fraud Detection for Bank Transactions - \href{https://github.com/dquerales/DataScience/tree/main/Projects}{View on GitHub}}
-%% 
-%%\begin{itemize}
-%%\itemsep0em
-%%\item Trained multiple logistic models for fraud detection in financial transactions.
-%%\item Compared Regression, GaussianNB, SVC and Random Forest models to improve efficiencies in detection results.
-%%\item Assessed performance with accuracy, precision and recall scores. Plot ROC curves to visualize AUC (area under curve).
-%%\end{itemize}
-%
-%\subsection*{Product Recommendations for Retails - \href{https://github.com/dquerales/DataScience/tree/main/Projects/Product\%20Recommendations}{View on Github}}
-% 
-%\begin{itemize}
-%\itemsep0em
-%\item An apriori algorithm project for product recommendations for a retail store.
-%\item Queries for most popular items, best month for sales and products often sold together.
-%\item Used Apriori for mining frequent products sets and relevant association rules to make products recommendations.
-%\end{itemize}
-
-\subsection*{Web APP deployment: Sentiment Analysis - \href{https://dquerales-webapp-app-xmgqcu.streamlit.app/}{View WebApp}}
- 
-\begin{itemize}
-\itemsep0em
-\item Developed a text classifier model for sentiment analysis to reduce human intervention.
-\item Vectorized text reviews for their use by the SVC classifier model, then created a pipeline to automate the input prepossessing to increase accuracy performance.
-\item Deployed the model as an Web Application using Streamlit.
-\end{itemize}
-%
-%\subsection*{AutoML: Automated Machine Learning Workflow - \href{https://dquerales-automl-app-c70cuz.streamlit.app/}{View WebApp}}
-% 
-%\begin{itemize}
-%\itemsep0em
-%\item An automated machine learning workflow for classifiers models.
-%\item Created a preview report from the uploaded data using pandas profiling.
-%\item Prepared, cleaned and trained the model using AutoML Pycaret.
-%\end{itemize}
-
 
 %============================================
 % EDUCATION
 %============================================
 \section*{EDUCATION}
 
-\textbf{Engineer's Degree in Electrical Engineering} | 2008-2019 \\ 
-\emph{\ucv}\\
-Electronics, Computer Science and Control Systems.
-
-%============================================
-% WORK EXPERIENCE
-%============================================
-\section*{WORK EXPERIENCE}
-
-\textbf{Data Scientist} | 2022-Present\\
-\emph{QUASH.ai} \\
-- Performed extensive data cleaning and preprocessing to ensure data quality and readiness for analysis.
-- Trained machine learning models for various applications, including predictive analytics and classification.
-- Deployed machine learning models into production environments, ensuring seamless integration and operational efficiency.
-- Utilized big data tools such as Apache Spark for large-scale data processing and analysis.
-- Collaborated with cross-functional teams to develop data-driven solutions and insights.
-\\
-\textbf{Freelancer} | 2019-2022 \\ 
-\emph{Freelance} \\
-- Conducted data science projects involving hardware description, numerical methods, and control systems.
-- Cleaned and transformed raw datasets, addressing issues such as missing values and outliers.
-- Developed and trained models for tasks such as regression, classification, and clustering.
-- Deployed models and data pipelines, automating workflows for clients.
-- Leveraged big data tools like Spark to handle and analyze large datasets efficiently.
-
-%============================================
-% CONTACT ME
-%============================================
+\textbf{Engineer's Degree in Electrical Engineering} | 2008-2019 \\
+\emph{\ucv} \\
+Electronics, Computer Science, and Control Systems.
 \vfill
-\centering
-%{\small
-% $\cdot$
-% +58 424 135 4501 %phone
-$\cdot$
-\href{mailto:d.querales@gmail.com}{d.querales@gmail.com} 
-$\cdot$ % Email 
-\url{https://www.linkedin.com/in/danielquerales/}
- $\cdot$ %Linkedin
-%\url{https://github.com/dquerales/} $\cdot$ %Github
-%\url{https://dquerales.github.io/DanielPortfolio/} $\cdot$ %Portfolio
-%}
 
 \end{document}
