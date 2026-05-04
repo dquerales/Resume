@@ -1,127 +1,125 @@
-%==============================================
-% Document Class
-%==============================================
-\documentclass[9pt]{article} % Reduced document font size
+\documentclass[letterpaper,11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{helvet} % Modern sans-serif font
+\renewcommand{\familydefault}{\sfdefault}
 
-%==============================================
-% Packages
-%==============================================
-\usepackage[T1]{fontenc}
-\usepackage[default]{raleway} % Font
-\usepackage{geometry} % Required for adjusting page dimensions and margins
-\usepackage[usenames, dvipsnames]{xcolor} % Required for specifying colours by name
-\usepackage[bookmarks, colorlinks, breaklinks]{hyperref} % Required for links
-\hypersetup{linkcolor=black, citecolor=blue, filecolor=black, urlcolor=cyan}% Set link colours
-\hypersetup{pdftitle={Daniel Querales | Resume}, pdfauthor={Daniel Querales}, pdfkeywords={Data Analyst, Machine Learning, Data Science, SQL, Python, Excel, Power Bi, Tableau, MySQL, R}}% Set PDF metadata
+% Page dimensions
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.25in}
+\addtolength{\textheight}{0.5in}
 
-% Ensure that the PDF output will be all unicode and machine-readable
-\input{glyphtounicode}
-\pdfgentounicode=1
+\urlstyle{same}
 
-%==============================================
-% Page Layout
-%==============================================
-\geometry{
-    paper=a4paper, % Paper size, change to letterpaper for US letter size
-    top=1.25cm, % Top margin
-    bottom=2cm, % Bottom margin
-    left=2cm, % Left margin
-    right=2cm, % Right margin
-    headheight=0.75cm, % Header height
-    footskip=1cm, % Space from the bottom margin to the baseline of the footer
-    headsep=0.75cm, % Space from the top margin to the baseline of the header
-    % showframe, % Uncomment to show how the type block is set on the page
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom macros for the resume
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
 }
 
-% Reduce spacing between items in itemize
-\usepackage{enumitem}
-\setlist{nosep} % No extra space between items
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-%==============================================
-% Definitions
-%==============================================
-\def\myname{DANIEL QUERALES}
-\def\position{DATA SCIENTIST}
-\def\ucv{Universidad Central de Venezuela}
+\newcommand{\resumeSubheadingNoDate}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
-\thispagestyle{empty}
 
-%==============================================
-% Name & Job Title
-%==============================================
-\begin{flushleft}
-{\Huge \myname} \\ % Name
-\medskip
-{\LARGE  \position} \\ 
-\bigskip
-\href{mailto:d.querales@gmail.com}{d.querales@gmail.com} \\ 
-\url{https://www.linkedin.com/in/danielquerales/}
-\end{flushleft}
+%----------HEADING----------
+\begin{center}
+    {\Huge \bfseries Data Scientist} \\ \vspace{4pt}
+    {\Large Daniel Querales} \\ \vspace{6pt}
+    \small \href{mailto:d.querales@gmail.com}{d.querales@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/danielquerales/}{linkedin.com/in/danielquerales}
+\end{center}
 
-%============================================
-% SUMMARY
-%============================================
-%\section*{Summary}
-\emph{Electrical Engineer with expertise in Data Science, proficient in R, Python, and SQL. Skilled in the complete machine learning lifecycle, from data cleaning and processing to model deployment and evaluation. Experienced in using tools like Tableau, Power BI, and Spark. Adept at collaborating to develop data-driven solutions, with strong capabilities in SQL, R, Python (Pandas, NumPy, Scikit-learn, Matplotlib), AWS Quicksight, Google Data Studio, and Microsoft Azure.}
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Summary}
+Data Scientist and Machine Learning Engineer with 4+ years of professional experience leveraging Electrical Engineering fundamentals to build high-performance analytics systems. Proficient in Python, R, and SQL, with deep expertise across the complete machine learning lifecycle including data transformation, production deployment, and automated pipeline orchestration. Adept at building scalable MLOps infrastructure and translating complex data into business value.
 
-%============================================
-% WORK EXPERIENCE
-%============================================
-\section*{WORK EXPERIENCE}
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, R, SQL, C++, MATLAB} \\
+     \textbf{Machine Learning \& MLOps}{: Scikit-learn, Docker, Apache Airflow, Databricks, Apache Spark} \\
+     \textbf{Data Engineering \& Cloud}{: Pandas, NumPy, MySQL, AWS Quicksight, Microsoft Azure, DButils} \\
+     \textbf{Data Visualization}{: Tableau, Power BI, Google Data Studio, Matplotlib} \\
+    }}
+ \end{itemize}
 
-\subsection*{Data Scientist | 2022-Present}
-\emph{QUASH.ai}
-\begin{itemize}
-\item Performed extensive data cleaning and preprocessing to ensure data quality and readiness for analysis.
-\item Trained machine learning models for various applications, including predictive analytics and classification.
-\item Deployed machine learning models into production environments, ensuring seamless integration and operational efficiency.
-\item Utilized big data tools such as Apache Spark for large-scale data processing and analysis.
-\item Collaborated with cross-functional teams to develop data-driven solutions and insights.
-\end{itemize}
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
 
-\subsection*{Freelancer | 2019-2022}
-\emph{Freelance}
-\begin{itemize}
-\item Conducted projects involving hardware description, numerical methods, and control systems.
-\item Cleaned and transformed raw datasets, addressing issues such as missing values and outliers.
-\item Developed and trained models for tasks such as regression, classification, and clustering.
-\item Deployed models and data pipelines, automating workflows for clients.
-\end{itemize}
+    \resumeSubheading
+      {QUASH.ai}{Remote}
+      {Data Scientist}{2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered end-to-end machine learning pipelines for predictive analytics, credit scoring, and high-accuracy classification tasks using Scikit-learn and Python.}
+        \resumeItem{Architected and managed containerized MLOps pipelines using Docker and Apache Airflow to automate data processing, continuous training, and reliable production inference.}
+        \resumeItem{Modernized metadata collection frameworks in the Databricks environment, refactoring scripts with native package utilities to enhance scoping and computational performance.}
+        \resumeItem{Extracted, cleaned, and processed large datasets using SQL and Apache Spark, establishing robust data quality and transformation standards.}
+        \resumeItem{Collaborated with cross-functional engineering and product teams to translate complex business problems into viable technical solutions and actionable dashboard insights in Tableau and Power BI.}
+      \resumeItemListEnd
 
-%============================================
-% PROJECTS
-%============================================
-\section*{PROJECTS}
+    \resumeSubheading
+      {Freelance}{Remote}
+      {Data Scientist \& ML Engineer}{2019 -- 2022}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented hardware description, control systems, and numerical methods projects tailored for global clients.}
+        \resumeItem{Performed advanced exploratory data analysis, outlier mitigation, and data imputation to convert raw client data into structured, production-ready datasets.}
+        \resumeItem{Developed, trained, and cross-validated diverse predictive models for regression, classification, and customer clustering in Python and R.}
+        \resumeItem{Deployed automated, lightweight analytics pipelines and custom scripts, reducing manual computational overhead for clients by 30\%.}
+      \resumeItemListEnd
 
-\subsection*{Data Exploration: Two years of COVID-19 - \href{https://dquerales.github.io/DanielPortfolio/two_years_of_covid.html}{View on GitHub}}
-\begin{itemize}
-\item Analyzed COVID-19 data to track the development of the pandemic.
-\item Used MySQL to compute values like total cases, total deaths, and fully vaccinated people.
-\item Created a Tableau dashboard to visualize key metrics.
-\end{itemize}
+  \resumeSubHeadingListEnd
 
-\subsection*{Sales Analysis: Electronics Store - \href{https://dquerales.github.io/DanielPortfolio/sales_analysis.html}{View on GitHub}}
-\begin{itemize}
-\item Examined sales records to find opportunities for revenue growth.
-\item Identified best-selling products, peak sales months, frequently bought-together items, and peak sales hours.
-\end{itemize}
-
-\subsection*{Web APP Deployment: Sentiment Analysis - \href{https://dquerales-webapp-app-xmgqcu.streamlit.app/}{View WebApp}}
-\begin{itemize}
-\item Created a text classifier model to automate sentiment analysis.
-\item Vectorized reviews for SVC classifier and built a preprocessing pipeline for improved accuracy.
-\item Deployed the model as a Streamlit web application.
-\end{itemize}
-
-%============================================
-% EDUCATION
-%============================================
-\section*{EDUCATION}
-
-\textbf{Engineer's Degree in Electrical Engineering} | 2008-2019 \\
-\emph{\ucv} \\
-Electronics, Computer Science, and Control Systems.
-\vfill
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Central de Venezuela}{Caracas, Venezuela}
+      {Engineer's Degree in Electrical Engineering}{Graduated at 2019}
+      \resumeItemListStart
+        \resumeItem{Specialized in Electronics, Computer Science, and Control Systems.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 \end{document}
