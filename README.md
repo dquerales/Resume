@@ -13,7 +13,8 @@ git clone url
 ## Usage
 
 1. Make changes
-2. Let github actions release th pdf
+2. Let github actions release the pdf
+3. https://github.com/dquerales/Resume/releases/latest/download/daniel_querales_resume.pdf
 
 
 # Contact
